@@ -1,6 +1,16 @@
-import { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css'
 import ToggleComponent from './component/ToggleComponent';
+
+
+// const  App = () => {
+  
+//   return (
+//     <div>
+      
+//     </div>
+//   )
+// }
 
 // use of useRef while using current
 
@@ -91,11 +101,60 @@ const App = () => {
 // }
 
 // live test
+// const  App = () => {
+  
+//   return (
+//     <div>
+//       <ToggleComponent/>
+//     </div>
+//   )
+// }
+
+//useRef() Method Create Persisted Mutable Values in react i.e changable variable
+
+// const  App = () => {
+//   let number = useRef(0);
+//   const incNum = () => {
+//     number.current++;
+//     console.log(number.current);
+//   }
+//   return (
+//     <div>
+//       <button onClick={incNum}>Increment</button>
+//     </div>
+//   )
+// }
+
+
+// const  App = () => {
+//   // create a ref to persist a mutable value
+//   const persistedValueRef = useRef(null);
+
+//   // State to track a value that causes re-render
+//   const [stateValue, setStateValue] = useState(0);
+
+//   const handleButtonClick = () => {
+//     // update the persistedValue without causing a re-render
+//     persistedValueRef.current = persistedValueRef.current?persistedValueRef.current+1: 1;
+//     console.log('Persisted value: ', persistedValueRef.current);
+
+//     // update the stateValue which triggers re-render
+//     setStateValue((prev) => prev + 1)
+//   }
+//   return (
+//     <div>
+//       <button onClick={handleButtonClick}>Increment</button>
+//       <p>State value: {stateValue}</p>
+//     </div>
+//   )
+// }
+
+
 const  App = () => {
   
   return (
     <div>
-      <ToggleComponent/>
+      
     </div>
   )
 }
